@@ -26,6 +26,9 @@ def main():
     )
 
     model = get_model()
+    
+    # Display model summary
+    model.summary()
 
     early_stopping = tf.keras.callbacks.EarlyStopping(
         monitor='val_loss',
